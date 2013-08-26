@@ -1,0 +1,9 @@
+{
+    "name" : "scalex-apm-plugin",
+    "author": "michal@duszyk.com",
+    "version" : "1.0.0",
+    "description" : "Scalextreme APM Plugin",
+    "dependencies": {
+
+    }
+}
