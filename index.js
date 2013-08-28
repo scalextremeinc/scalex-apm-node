@@ -9,6 +9,6 @@ var LOG = new logging.Logger(path.basename(module.filename));
 
 LOG.info("Initializing Scalextreme APM plugin...");
 
-
+obj_patch.add(require('http'), 'http', 'request', wrapper_http.request);
 obj_patch.add(require('http'), 'http', 'createServer', wrapper_http.createServer);
 obj_patch.add(require('module'), 'module', '_load', wrapper_module._load);
