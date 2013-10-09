@@ -1,8 +1,12 @@
 var path = require('path');
 var lib_dir = path.join(__dirname, 'lib');
 
+var config = require(path.join(lib_dir, 'config'));
 var logging = require(path.join(lib_dir, 'logging'));
-//logging.CONFIG.level = logging.INFO;
+
+var CONFIG = new config.Config();
+logging.CONFIG.level = logging[CONFIG.log_level];
+
 var LOG = new logging.Logger(path.basename(module.filename));
 
 LOG.info("Initializing Scalextreme APM plugin...");
