@@ -1,1 +1,4 @@
 Scalextreme nodejs APM plugin
+
+npm install git+https://github.com/scalextremeinc/scalex-apm-node.git
+
