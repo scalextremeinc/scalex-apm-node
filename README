@@ -1,6 +1,15 @@
 Scalextreme nodejs APM plugin
 
-npm install git+https://github.com/scalextremeinc/scalex-apm-node.git
+Install:
+    npm install git+https://github.com/scalextremeinc/scalex-apm-node.git
 
-require('scalex-apm-plugin');
+Import plugin:
+    require('scalex-apm-plugin');
 
+Configure and run:
+    export SCALEX_COLLECTOR_URL=http://example.com/collector/transaction
+    export SCALEX_CUSTOMER=test
+    export SCALEX_APP=server
+    export SCALEX_UPLOAD_INTERVAL=5000
+    export SCALEX_APM_LOG_LEVEL=DEBUG
+    node server.js
