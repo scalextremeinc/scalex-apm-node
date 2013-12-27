@@ -4,6 +4,6 @@
     "version" : "1.0.0",
     "description" : "Scalextreme APM Plugin",
     "dependencies": {
-
+        "continuation-local-storage": "3.0.0"
     }
 }
